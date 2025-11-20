@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../Styles/CalculatorApp.css";
+import { evaluate } from "mathjs";
 
 export default function CalculatorApp() {
   const [input, setInput] = useState(""); // stores the current input
@@ -14,7 +15,7 @@ export default function CalculatorApp() {
     try {
       // Use eval carefully – only for simple demo calculator
       // In production, a proper parser is safer
-      const result = eval(input);
+      const result = evaluate(input);
       setInput(result.toString());
     } catch (error) {
       setInput("Error");
