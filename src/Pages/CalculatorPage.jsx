@@ -1,13 +1,20 @@
-import "../Styles/CalculatorPage.css"
+import "../Styles/CalculatorPage.css";
+import NavBar from "./Components/NavBar";
+import CalculatorApp from "./Components/Calculator";
+ 
 export default function CalculatorPage() {
     return (
         <>
 
             <div className="CalculatorPage-wrapper">
-
-                <h1>Calculator Page</h1>
-            </div>
+  <NavBar />
+  <main className="CalculatorPage-content">
+    <CalculatorApp />
+  </main>
+</div>
             
         </>
     )
 }
+
+

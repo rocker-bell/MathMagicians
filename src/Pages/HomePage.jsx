@@ -7,7 +7,7 @@ export default function HomePage() {
       <NavBar />
 
       <main className="HomePage-mainContainer">
-        <h2 className="HomePage-mainContainer-title HomePage-mainContainer-title1">Welcome to Math Magicians!</h2>
+        <h2 className="HomePage-mainContainer-title HomePage-mainContainer-title1">Welcome to Math Magicians <span className="star-icon">✨</span>!</h2>
 
         <section className="HomePage-mainContainer-description">
           <p className="HomePagedesc-p HomePagedesc-p1">
