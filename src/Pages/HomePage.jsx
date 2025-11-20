@@ -1,10 +1,11 @@
-import "../Styles/HomePage.css"
+import "../Styles/HomePage.css";
+import NavBar from "./Components/NavBar";
 export default function HomePage() {
     return (
         <>
            <div className="HomePage-wrapper">
 
-                <h1>Home Page</h1>
+                <NavBar/>
             </div>
         </>
     )
