@@ -8,8 +8,11 @@
       }
     ],
     "selector-class-pattern": "^[a-zA-Z][a-zA-Z0-9]+(-[a-zA-Z0-9]+)*$",
-    "comment-empty-line-before": ["always", { "except": ["first-nested"] }],
-    "declaration-empty-line-before": ["always", { "except": ["first-nested"] }]
+    "comment-empty-line-before": ["always", { "except": ["first-nested", "after-comment"] }],
+    "declaration-empty-line-before": [
+      "always",
+      { "except": ["first-nested", "after-declaration", "after-comment"], "ignore": ["after-comment"] }
+    ]
   },
   "ignoreFiles": [
     "build/**",
