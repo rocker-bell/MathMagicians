@@ -1,0 +1,46 @@
+.QuoteApp-wrapper {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px dashed #333;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.QuoteApp-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.QuoteApp-quote {
+  margin: 1rem 0;
+}
+
+.QuoteApp-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.QuoteApp-author {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.QuoteApp-btn {
+  padding: 0.8rem 1.2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #388e3c;
+  color: white;
+}
+
+.QuoteApp-loading,
+.QuoteApp-error {
+  font-size: 1.2rem;
+  color: #d32f2f;
+}

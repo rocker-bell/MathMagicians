@@ -1,8 +1,8 @@
-# Math Magicians
+# Math Magicians ✨
 
 **Sneak Peek:** Math Magicians
 
----
+
 
 ## Learning Objectives
 

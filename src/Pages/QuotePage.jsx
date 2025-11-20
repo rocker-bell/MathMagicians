@@ -1,10 +1,15 @@
 import "../Styles/QuotePage.css"
+import NavBar from "./Components/NavBar"
+import Quotes from "./Components/Quotes.jsx"
 export default function QuotePage() {
     return (
         <>
             <div className="QuotePage-wrapper">
 
-                <h1>Quote Page</h1>
+                <NavBar/>
+                 <main className="QuotePage-content">
+                    <Quotes />
+                  </main>
             </div>
         </>
     )
