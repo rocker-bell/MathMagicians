@@ -1,65 +1,97 @@
-# React and Redux
+# Math Magicians
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+**Sneak Peek:** Math Magicians
 
-## Set-up GitHub Actions
+---
 
-This GitHub Action is going to run [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to help you find style issues.
+## Learning Objectives
 
-[Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+* Understand how to use **medium-fidelity wireframes** to design a UI.
+* Learn how to build a **Single Page Application (SPA)** using **React**.
+* Practice creating reusable components and managing state in a React app.
 
-[ESLint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+**Estimated time:** 0.5h
 
-Please do the following **steps in this order**:
+---
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+## Description
 
-![gh actions checks](../assets/images/gh-actions-eslint-stylelint-checks.png)
+**Math Magicians** is a website for all fans of mathematics. It is a **Single Page Application (SPA)** that allows users to:
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
+* Perform **simple calculations** using a calculator.
+* Read a **random math-related quote** for inspiration.
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+By building this application, you will gain practical experience in **React** and **SPA development**.
 
-## Set-up linters in your local env
+---
 
-### ESLint
+## Features
 
-1. Run 
-    ```
-    npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x
-    ```
-    *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-2. Copy [.eslintrc.json](./.eslintrc.json) and [.babelrc](./.babelrc) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx eslint "**/*.{js,jsx}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Eslint](https://eslint.org/docs/latest/user-guide/command-line-interface#fixing-problems) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+1. **Calculator** – Allows users to perform basic arithmetic operations.
+2. **Quotes Page** – Displays a random math-related quote every time you visit.
+3. **Single Page App Navigation** – Seamless navigation between the calculator, quotes, and any additional pages.
 
-### Stylelint
+---
 
-1. Run
+## 🛠 How to Build the Math Magicians Website
 
-   ```
-   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-   ```
+1. **Start with the Calculator:**
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+   * Build the **core functionality** first.
+   * Begin with the **UI layout** based on medium-fidelity wireframes.
+   * Implement all basic arithmetic operations (addition, subtraction, multiplication, division).
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/usage/options) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+2. **Expand to Full Website:**
 
-## Test/Deployment Actions
+   * Integrate the calculator into a **full SPA**.
+   * Add **3 sub-pages** (Calculator, Quotes, and one additional page of your choice).
+   * Ensure smooth **navigation without page reloads**.
 
-Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+3. **Work Collaboratively:**
 
-Make sure that you do not modify the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) but that you create a separe GitHub Action workflow file for that.
+   * Some project steps involve **pair programming**.
+   * Use version control (**Git & GitHub**) to manage your project effectively.
+
+---
+
+## 📂 Project Structure
+
+```
+MathMagicians                
+├─ public                    
+│  └─ react.svg              
+├─ src                       
+│  ├─ assets                 
+│  ├─ Pages                  
+│  │  ├─ Components          
+│  │  │  └─ NavBar.jsx       
+│  │  ├─ CalculatorPage.jsx  
+│  │  ├─ HomePage.jsx        
+│  │  └─ QuotePage.jsx       
+│  ├─ Styles                 
+│  │  ├─ CalculatorPage.css  
+│  │  ├─ HomePage.css        
+│  │  ├─ NavBar.css          
+│  │  └─ QuotePage.css       
+│  ├─ App.jsx                
+│  ├─ index.css              
+│  └─ main.jsx               
+├─ eslint.config.js          
+├─ index.html                
+├─ package-lock.json         
+├─ package.json              
+├─ README.md                 
+└─ vite.config.js            
+
+
+```
+
+---
+
+## 📌 Notes
+
+* This project is a **practice project** to learn React fundamentals.
+* Emphasis is on **component-based architecture**, **state management**, and **clean UI design**.
+* Additional features or improvements are encouraged once the core functionality is working.
+
+
