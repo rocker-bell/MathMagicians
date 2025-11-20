@@ -17,7 +17,7 @@ export default function CalculatorApp() {
       // In production, a proper parser is safer
       const result = evaluate(input);
       setInput(result.toString());
-    } catch (error) {
+    } catch  {
       setInput("Error");
     }
   };
