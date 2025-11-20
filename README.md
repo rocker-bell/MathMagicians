@@ -64,15 +64,19 @@ MathMagicians
 │  ├─ assets                 
 │  ├─ Pages                  
 │  │  ├─ Components          
-│  │  │  └─ NavBar.jsx       
+│  │  │  ├─ Calculator.jsx   
+│  │  │  ├─ NavBar.jsx       
+│  │  │  └─ Quotes.jsx       
 │  │  ├─ CalculatorPage.jsx  
 │  │  ├─ HomePage.jsx        
 │  │  └─ QuotePage.jsx       
 │  ├─ Styles                 
+│  │  ├─ CalculatorApp.css   
 │  │  ├─ CalculatorPage.css  
 │  │  ├─ HomePage.css        
 │  │  ├─ NavBar.css          
-│  │  └─ QuotePage.css       
+│  │  ├─ QuotePage.css       
+│  │  └─ QuotesApp.css       
 │  ├─ App.jsx                
 │  ├─ index.css              
 │  └─ main.jsx               
@@ -82,6 +86,7 @@ MathMagicians
 ├─ package.json              
 ├─ README.md                 
 └─ vite.config.js            
+         
 
 
 ```
