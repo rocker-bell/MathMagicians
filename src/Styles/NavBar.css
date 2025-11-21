@@ -58,9 +58,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    flex-flow: row wrap;
     padding: 5px;
-    flex-wrap: wrap;
 }
 
 
@@ -77,9 +76,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    flex-flow: row wrap;
     gap: 20px; 
-    flex-wrap: wrap; 
    
    
 }
@@ -124,12 +122,11 @@
     }
 } */
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
     .NavBar-wrapper {
-        flex-direction: column;   /* stack title + links vertically */
+        flex-flow: column wrap;   /* stack title + links vertically */
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
         /* width: 90%; */
         gap: 25px;
         padding: 20px;
@@ -143,9 +140,8 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        flex-wrap: wrap;          /* allows UL to wrap on multiple lines */
+        flex-flow: column wrap;          /* allows UL to wrap on multiple lines */
         gap: 20px;
-        flex-direction: column;
 
     }
 
