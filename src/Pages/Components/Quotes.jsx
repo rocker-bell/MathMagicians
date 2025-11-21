@@ -41,7 +41,7 @@ export default function Quotes() {
 
   return (
     <div className="QuoteApp-wrapper">
-      <h2 className="QuoteApp-title">Random Math Quote</h2>
+      {/* <h2 className="QuoteApp-title">Random Math Quote</h2> */}
 
       {loading ? (
         <p className="QuoteApp-loading">Loading...</p>

@@ -1,14 +1,14 @@
 .CalculatorPage-wrapper {
   width: 100%;
-  min-height: 100vh; /* full viewport height */
+  height: 100%;
   padding: 2rem;
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f9f9f9; /* subtle background */
-  box-sizing: border-box; /* ensures padding doesn't affect width */
+  /* background-color: yellow;  */
+  box-sizing: border-box; 
 }
 
 .CalculatorPage-title {
